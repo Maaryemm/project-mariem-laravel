@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
+                    {{ __("In this panel you can add data to Database, then the data gonna be displayed in the JURSE 2025 Website") }}
                 </div>
             </div>
         </div>

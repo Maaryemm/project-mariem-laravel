@@ -29,12 +29,16 @@ Route::get('/SocialEvent', [linkController::class,'GetLink']);
 Route::post('/inscription',[RegisterController::class,'Store'])->name('inscription');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/socialeLink', [linkController::class, 'show'])->name('Social');
     Route::post('/socialeLink', [linkController::class, 'Addlink'])->name('Sociale.add');
+    Route::get('/NoteSpeaker', [KeySpeaker::class, 'show'])->name('speaker');
+    Route::post('/NoteSpeaker', [KeySpeaker::class, 'AddKeySpeaker'])->name('speaker.add');
+
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
