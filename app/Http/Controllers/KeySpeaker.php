@@ -24,8 +24,8 @@ class KeySpeaker extends Controller
         $request->validate([
             'firstname' => 'required|string|max:255',
             'lastname' => 'required|string',
-            'description' => 'required|string',
-            'website' => 'required|string',
+            'description' => 'required|text',
+            'website' => 'required|text',
         ]);
 
         KeyNoteSpeaker::create([

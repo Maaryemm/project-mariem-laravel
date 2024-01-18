@@ -1,6 +1,6 @@
 @extends('layout.blank')
 @section('image','assets/img/social_event.jpg')
-@section('titre','Mon Projet\Date')
+@section('titre','JURSE 2025')
 @section('header-content')
 <header class="masthead" style="background-image: url('@yield('image')')" >
     

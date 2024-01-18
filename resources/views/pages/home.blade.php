@@ -1,6 +1,6 @@
 @extends('layout.blank')
 @section('image','assets/img/home-bg.jpg')
-@section('titre','Mon Projet\home')
+@section('titre','JURSE 2025')
 @section('header-content')
 <header class="masthead" style="background-image: url('@yield('image')')">
 <div class="container position-relative px-4 px-lg-5">
